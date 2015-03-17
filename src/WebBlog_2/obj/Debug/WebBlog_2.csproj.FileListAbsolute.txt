@@ -4,3 +4,9 @@ F:\luniam_workspace\blog\WebBlog_2\src\WebBlog_2\bin\WebBlog_2.pdb
 F:\luniam_workspace\blog\WebBlog_2\src\WebBlog_2\obj\Debug\WebBlog_2.csprojResolveAssemblyReference.cache
 F:\luniam_workspace\blog\WebBlog_2\src\WebBlog_2\obj\Debug\WebBlog_2.dll
 F:\luniam_workspace\blog\WebBlog_2\src\WebBlog_2\obj\Debug\WebBlog_2.pdb
+E:\Weblog\Weblog\src\WebBlog_2\bin\WebBlog_2.dll.config
+E:\Weblog\Weblog\src\WebBlog_2\bin\WebBlog_2.dll
+E:\Weblog\Weblog\src\WebBlog_2\bin\WebBlog_2.pdb
+E:\Weblog\Weblog\src\WebBlog_2\obj\Debug\WebBlog_2.csprojResolveAssemblyReference.cache
+E:\Weblog\Weblog\src\WebBlog_2\obj\Debug\WebBlog_2.dll
+E:\Weblog\Weblog\src\WebBlog_2\obj\Debug\WebBlog_2.pdb
