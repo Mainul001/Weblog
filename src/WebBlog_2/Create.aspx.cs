@@ -19,7 +19,8 @@ namespace WebBlog_2
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string content = "";
+            string content = this.htmlEditorTxt.Text;
+            ArticleTempLabel.Text = content;
             
         }
     }

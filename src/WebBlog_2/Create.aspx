@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Create.aspx.cs" Inherits="WebBlog_2.Create" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Create.aspx.cs" Inherits="WebBlog_2.Create" ValidateRequest ="false" %>
 
 <!DOCTYPE html>
 
@@ -10,17 +10,19 @@
 
     <link href="Content/bootstrap.css" rel="stylesheet" />
 
-    <script type="text/javascript" src="tinymce/tinymce_4.1.9/tinymce/js/tinymce/tinymce.min.js"></script>
+    
+    <script src="tinymce/tinymce_4.1.9/tinymce/js/tinymce/tinymce.min.js"></script>
     <script type="text/javascript">
         tinymce.init({
-            selector: "textarea",
-            height: 400,
-            plugins: [
-                "advlist autolink lists link image charmap print preview anchor",
-                "searchreplace visualblocks code fullscreen",
-                "insertdatetime media table contextmenu paste"
-            ],
-            toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+            selector: ".tinymce",
+            theme: "modern",
+            menubar: false,
+            resize: false,
+            statusbar: false,
+            plugins: ["advlist autolink lists charmap preview hr anchor",
+                "pagebreak code nonbreaking table contextmenu directionality paste"],
+            toolbar1: "styleselect | bold italic underline | pagebreak code preview | undo redo",
+            toolbar2: "alignleft aligncenter alignright alignjustify | bullist numlist outdent indent"
         });
     </script>
 
@@ -70,17 +72,22 @@
         <table>
             <tr>
                 <td>
-                    <asp:Label ID="Label3" runat="server" Text="Article"></asp:Label>
+                    <asp:Label ID="ArticleTempLabel" runat="server" Text="Article"></asp:Label>
                 </td>
             </tr>
         </table>
-        <asp:TextBox ID="TinyMceEditor" runat="server"></asp:TextBox>
-
-    </form>
 
 
-    <form method="post" action="somepage">
-        <textarea id ="tinymce" name="content" style="width: 100%">Hello world</textarea>
+        <div>
+
+            <p>
+                Write something in TinyMCE and it will be shown here:
+                <asp:TextBox ID="htmlEditorTxt" runat="server" ClientIDMode="Static"
+                   TextMode="MultiLine" Rows="30" Style="width: 95%" CssClass="tinymce" />
+            </p>
+
+        </div>
+
     </form>
 
 
