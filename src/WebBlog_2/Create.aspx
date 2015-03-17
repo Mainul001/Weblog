@@ -6,11 +6,15 @@
 <head runat="server">
     
     <title></title>
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
     
     <script type="text/javascript" src="tinymce/tinymce_4.1.9/tinymce/js/tinymce/tinymce.min.js"></script>
                     <script type="text/javascript">
                         tinymce.init({
                             selector: "textarea",
+                            height:400,
                             plugins: [
                                 "advlist autolink lists link image charmap print preview anchor",
                                 "searchreplace visualblocks code fullscreen",
@@ -25,7 +29,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="table-striped">
+            <table>
                 <tr>
                     <td>
                         <asp:Label ID="Label1" runat="server" Text="Title"></asp:Label>
@@ -37,7 +41,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:Label ID="Author" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="AuthorLabel" runat="server" Text="Author"></asp:Label>
 
                     </td>
                     <td>
@@ -48,13 +52,22 @@
                     <td>
                         <asp:Label ID="Label2" runat="server" Text="Content"></asp:Label></td>
                 </tr>
+                
+                
             </table>
         </div>
+        <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-success" />
     </form>
     
     <form method="post" action="somepage">
                         <textarea name="content" style="width: 100%"></textarea>
-                    </form> 
+                    </form>
+    
+    
+    
+    <script src="Scripts/jquery-2.1.3.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
 
 </body>
 </html>
