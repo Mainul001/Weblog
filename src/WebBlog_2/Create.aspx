@@ -17,6 +17,7 @@
             selector: ".tinymce",
             theme: "modern",
             menubar: false,
+            height:300,
             resize: false,
             statusbar: false,
             plugins: ["advlist autolink lists charmap preview hr anchor",
@@ -67,7 +68,7 @@
 
             </table>
         </div>
-        <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-success" OnClick="Button1_Click" />
+        
 
         <table>
             <tr>
@@ -87,6 +88,8 @@
             </p>
 
         </div>
+
+        <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-success" OnClick="Button1_Click" />
 
     </form>
 
