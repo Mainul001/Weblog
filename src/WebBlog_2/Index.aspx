@@ -17,12 +17,10 @@
     <div>
         
         <table>
-            <tr></tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="New Post" /></td>
+                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-success" Text="New Post" OnClick="Button1_Click" /></td>
             </tr>
-            <tr></tr>
             <tr>
                 <td>
                     <asp:Button ID="Button2" runat="server" CssClass="btn btn-primary" Text="View Post" /></td>
