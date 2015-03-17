@@ -23,6 +23,15 @@
                             toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
                         });
                     </script>
+    
+    
+    <script type="text/javascript">
+
+        function GetContent(parameters) {
+            return tinyMCE.get("tinyMCEEditor").getContent();
+        }
+
+    </script>
 
 
 </head>
@@ -56,11 +65,19 @@
                 
             </table>
         </div>
-        <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-success" />
+        <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-success" OnClick="Button1_Click" />
+        
+        <table>
+            <tr>
+                <td>
+                    <asp:Label ID="Label3" runat="server" Text="Article"></asp:Label>
+                </td>
+            </tr>
+        </table>
     </form>
     
-    <form method="post" action="somepage">
-                        <textarea name="content" style="width: 100%"></textarea>
+    <form method="post">
+                        <textarea id ="tinyMCEEditor" name="content" style="width: 100%">hello world</textarea>
                     </form>
     
     
