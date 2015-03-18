@@ -13,7 +13,11 @@ namespace WebBlog_2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GetArticle();
+            try {
+                GetArticle();
+            } catch (Exception ex) {
+                this.FirstArticleBody.Text = "Sorry an error occured";
+            }
         }
 
         private void GetArticle() {
@@ -42,19 +46,29 @@ namespace WebBlog_2
             connection.Close();
 
             this.FirstArticleTitle.Text = articles[0].Title;
-            this.FirstArticleBody.Text = articles[0].Body;
+            this.FirstArticleAuthor.Text = "Written by " + articles[0].Author + ",  At " + articles[0].DateAndTime.ToString();
+            this.FirstArticleBody.Text = TruncateLongString(articles[0].Body, 250) + "....";
 
             this.SecondArticleTitle.Text = articles[1].Title;
-            this.SecondArticleBody.Text = articles[1].Body;
+            this.SecondArticleAuthor.Text = "Written by " + articles[1].Author + ",  At " + articles[1].DateAndTime.ToString();
+            this.SecondArticleBody.Text = TruncateLongString(articles[1].Body, 250) + "....";
 
             this.ThirdArticleTitle.Text = articles[2].Title;
-            this.ThirdArticleBody.Text = articles[2].Body;
+            this.ThirdArticleAuthor.Text = "Written by " + articles[2].Author + ",  At " + articles[2].DateAndTime.ToString();
+            this.ThirdArticleBody.Text = TruncateLongString(articles[2].Body, 250) + "....";
 
             this.FourthArticleTitle.Text = articles[3].Title;
-            this.FourthArticleBody.Text = articles[3].Body;
+            this.FourthArticleAuthor.Text = "Written by " + articles[3].Author + ",  At " + articles[3].DateAndTime.ToString();
+            this.FourthArticleBody.Text = TruncateLongString(articles[3].Body, 250) + "....";
 
             this.FifthArticleTitle.Text = articles[4].Title;
-            this.FifthArticleBody.Text = articles[4].Body;
+            this.FifthArticleAuthor.Text = "Written by " + articles[4].Author + ",  At " + articles[4].DateAndTime.ToString();
+            this.FifthArticleBody.Text = TruncateLongString(articles[4].Body, 250) + "....";
+        }
+
+
+        public static string TruncateLongString(string str, int maxLength) {
+            return str.Substring(0, Math.Min(str.Length, maxLength));
         }
     }
 }

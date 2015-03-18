@@ -31,6 +31,15 @@ namespace WebBlog_2 {
         protected global::System.Web.UI.WebControls.Label FirstArticleTitle;
         
         /// <summary>
+        /// FirstArticleAuthor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FirstArticleAuthor;
+        
+        /// <summary>
         /// FirstArticleBody control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace WebBlog_2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label SecondArticleTitle;
+        
+        /// <summary>
+        /// SecondArticleAuthor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label SecondArticleAuthor;
         
         /// <summary>
         /// SecondArticleBody control.
@@ -67,6 +85,15 @@ namespace WebBlog_2 {
         protected global::System.Web.UI.WebControls.Label ThirdArticleTitle;
         
         /// <summary>
+        /// ThirdArticleAuthor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ThirdArticleAuthor;
+        
+        /// <summary>
         /// ThirdArticleBody control.
         /// </summary>
         /// <remarks>
@@ -85,6 +112,15 @@ namespace WebBlog_2 {
         protected global::System.Web.UI.WebControls.Label FourthArticleTitle;
         
         /// <summary>
+        /// FourthArticleAuthor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FourthArticleAuthor;
+        
+        /// <summary>
         /// FourthArticleBody control.
         /// </summary>
         /// <remarks>
@@ -101,6 +137,15 @@ namespace WebBlog_2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label FifthArticleTitle;
+        
+        /// <summary>
+        /// FifthArticleAuthor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FifthArticleAuthor;
         
         /// <summary>
         /// FifthArticleBody control.
