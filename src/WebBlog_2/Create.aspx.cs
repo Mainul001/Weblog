@@ -40,10 +40,15 @@ namespace WebBlog_2
 
             SqlConnection connection = new SqlConnection(connectionString);
 
-            string query = String.Format("INSERT INTO t_article VALUES('{0}','{1}', '{2}', '{3}')", anArticle.Title, anArticle.Body,
-                anArticle.Author, anArticle.DateAndTime);
+            string query = "INSERT INTO t_article VALUES( @title, @body, @author, @date)";
 
             SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.AddWithValue("@title", anArticle.Title);
+            command.Parameters.AddWithValue("@body", anArticle.Body);
+            command.Parameters.AddWithValue("@author", anArticle.Author);
+            command.Parameters.AddWithValue("@date", anArticle.DateAndTime);
+
             connection.Open();
             int rowAffected = command.ExecuteNonQuery();
             connection.Close();
