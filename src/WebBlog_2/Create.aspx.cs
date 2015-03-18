@@ -27,7 +27,6 @@ namespace WebBlog_2
             NewArticle anArticle = new NewArticle(TitleTextBox.Text, AuthorTextBox.Text, htmlEditorTxt.Text);
             if (SaveArticle(anArticle)) {
                 ArticleTempLabel.Text = "Article saved successfully";
-                Button1.Text = "Article saved successfully";
             }
 
             else {

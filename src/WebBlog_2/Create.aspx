@@ -95,7 +95,7 @@
 
         </div>
 
-        <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-success btn-lg btn-block" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-success btn-lg" OnClick="Button1_Click" />
 
         <asp:Label ID="ArticleTempLabel" runat="server" class ="lead" Text=""></asp:Label>
 
