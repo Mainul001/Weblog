@@ -10,20 +10,53 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div class="container">
-    <div>
-        <h1> <a href="Details.aspx"/> Victory, a balm for the nation</h1>
-        <p class="lead">
-             The roar and the chants are unmistakable. You only hear them at a cricket stadium in Bangladesh or if you are around the Dhaka University area, soon after a big Bangladesh win. The roar was there when Bangladesh beat England in Adelaide on Monday and if you are passing by, you would be dragged towards it.
-        </p>
-    </div>
-    <div></div>
-    </div>
+        <div class="container">
+            <div>
+                <h1>
+                    <asp:Label ID="FirstArticleTitle" runat="server" Text=""></asp:Label>
+                </h1>
+                <p class="lead">
+                    <asp:Label ID="FirstArticleBody" runat="server" Text=""></asp:Label>
+                </p>
+            </div>
+            <div>
+                <h1>
+                    <asp:Label ID="SecondArticleTitle" runat="server" Text=""></asp:Label>
+                </h1>
+                <p class="lead">
+                    <asp:Label ID="SecondArticleBody" runat="server" Text=""></asp:Label>
+                </p>
+            </div>
+            <div>
+                <h1>
+                    <asp:Label ID="ThirdArticleTitle" runat="server" Text=""></asp:Label>
+                </h1>
+                <p class="lead">
+                    <asp:Label ID="ThirdArticleBody" runat="server" Text=""></asp:Label>
+                </p>
+            </div>
+            <div>
+                <h1>
+                    <asp:Label ID="FourthArticleTitle" runat="server" Text=""></asp:Label>
+                </h1>
+                <p class="lead">
+                    <asp:Label ID="FourthArticleBody" runat="server" Text=""></asp:Label>
+                </p>
+            </div>
+            <div>
+                <h1>
+                    <asp:Label ID="FifthArticleTitle" runat="server" Text=""></asp:Label>
+                </h1>
+                <p class="lead">
+                    <asp:Label ID="FifthArticleBody" runat="server" Text=""></asp:Label>
+                </p>
+            </div>
+        </div>
     </form>
-    
-    
+
+
     <script src="Scripts/jquery-2.1.3.js"></script>
-<script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
 </body>
 
 </html>

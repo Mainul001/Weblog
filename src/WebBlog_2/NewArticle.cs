@@ -16,5 +16,9 @@ namespace WebBlog_2 {
             this.Body = body;
             this.DateAndTime = DateTime.Now;
         }
+
+        public NewArticle() {
+
+        }
     }
 }
