@@ -41,6 +41,7 @@ namespace WebBlog_2
                 anArticle.Title = reader["title"].ToString();
                 anArticle.Author = reader["author"].ToString();
                 anArticle.Body = reader["body"].ToString();
+                anArticle.Id = int.Parse(reader["id"].ToString());
                 anArticle.DateAndTime = (DateTime)reader["create_date"];
                 articles.Add(anArticle);
             }

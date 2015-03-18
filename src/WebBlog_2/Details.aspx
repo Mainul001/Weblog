@@ -82,6 +82,26 @@
 
 
         </div>
+        <div class ="container">
+            <h4>
+                Please add your comment here.
+            </h4>
+            <p>
+                Name
+            </p>
+            <p>
+                <asp:TextBox ID="NameTextBox" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                Comment
+            </p>
+            <p>
+                <asp:TextBox ID="CommentTextBox" runat="server" TextMode="MultiLine"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Button ID="CommentButton" CssClass ="btn-primary btn-lg" runat="server" Text="Comment" OnClick="CommentButton_Click" />
+            </p>
+        </div>
     </form>
 
     <script src="Scripts/jquery-2.1.3.js"></script>
