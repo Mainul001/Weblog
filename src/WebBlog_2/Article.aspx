@@ -20,7 +20,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">PI team</a>
+                    <a class="navbar-brand" href="Index.aspx">PI team</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -67,20 +67,25 @@
         </nav>
         <div class="container">
             <div>
-                <h1>
-                    <asp:Label ID="FirstArticleTitle" runat="server" Text=""></asp:Label>
-                </h1>
+                <p class ="lead text-center">
+                    Recent Articles
+                </p>
+            </div>
+            <div>
+                <h2>
+                    <asp:LinkButton ID="FirstArticleTitle" runat="server" Text="" OnClick="FirstArticleTitle_Click"></asp:LinkButton>
+                </h2>
                 <h4>
                     <asp:Label ID="FirstArticleAuthor" runat="server" Text=""></asp:Label>
                 </h4>
-                <p class="lead">
+                <p class ="lead">
                     <asp:Label ID="FirstArticleBody" runat="server" Text=""></asp:Label>
                 </p>
             </div>
             <div>
-                <h1>
-                    <asp:Label ID="SecondArticleTitle" runat="server" Text=""></asp:Label>
-                </h1>
+                <h2>
+                    <asp:LinkButton ID="SecondArticleTitle" runat="server" Text="" OnClick="SecondArticleTitle_Click"></asp:LinkButton>
+                </h2>
                 <h4>
                     <asp:Label ID="SecondArticleAuthor" runat="server" Text=""></asp:Label>
                 </h4>
@@ -89,9 +94,9 @@
                 </p>
             </div>
             <div>
-                <h1>
-                    <asp:Label ID="ThirdArticleTitle" runat="server" Text=""></asp:Label>
-                </h1>
+                <h2>
+                    <asp:LinkButton ID="ThirdArticleTitle" runat="server" Text="" OnClick="ThirdArticleTitle_Click"></asp:LinkButton>
+                </h2>
                 <h4>
                     <asp:Label ID="ThirdArticleAuthor" runat="server" Text=""></asp:Label>
                 </h4>
@@ -100,9 +105,9 @@
                 </p>
             </div>
             <div>
-                <h1>
-                    <asp:Label ID="FourthArticleTitle" runat="server" Text=""></asp:Label>
-                </h1>
+                <h2>
+                    <asp:LinkButton ID="FourthArticleTitle" runat="server" Text="" OnClick="FourthArticleTitle_Click"></asp:LinkButton>
+                </h2>
                 <h4>
                     <asp:Label ID="FourthArticleAuthor" runat="server" Text=""></asp:Label>
                 </h4>
@@ -111,9 +116,9 @@
                 </p>
             </div>
             <div>
-                <h1>
-                    <asp:Label ID="FifthArticleTitle" runat="server" Text=""></asp:Label>
-                </h1>
+                <h2>
+                    <asp:LinkButton ID="FifthArticleTitle" runat="server" Text="" OnClick="FifthArticleTitle_Click"></asp:LinkButton>
+                </h2>
                 <h4>
                     <asp:Label ID="FifthArticleAuthor" runat="server" Text=""></asp:Label>
                 </h4>

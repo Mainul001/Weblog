@@ -9,8 +9,11 @@ using System.Data.SqlClient;
 
 namespace WebBlog_2
 {
+    
     public partial class Article : System.Web.UI.Page
     {
+        List<NewArticle> articles;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             try {
@@ -31,7 +34,7 @@ namespace WebBlog_2
 
             SqlDataReader reader = command.ExecuteReader();
 
-            List<NewArticle> articles = new List<NewArticle>();
+            articles = new List<NewArticle>();
 
             while (reader.Read()) {
                 NewArticle anArticle = new NewArticle();
@@ -69,6 +72,31 @@ namespace WebBlog_2
 
         public static string TruncateLongString(string str, int maxLength) {
             return str.Substring(0, Math.Min(str.Length, maxLength));
+        }
+
+        protected void FirstArticleTitle_Click(object sender, EventArgs e) {
+            Session["Article"] = articles[0];
+            Response.Redirect("Details.aspx");
+        }
+
+        protected void SecondArticleTitle_Click(object sender, EventArgs e) {
+            Session["Article"] = articles[1];
+            Response.Redirect("Details.aspx");
+        }
+
+        protected void ThirdArticleTitle_Click(object sender, EventArgs e) {
+            Session["Article"] = articles[2];
+            Response.Redirect("Details.aspx");
+        }
+
+        protected void FourthArticleTitle_Click(object sender, EventArgs e) {
+            Session["Article"] = articles[3];
+            Response.Redirect("Details.aspx");
+        }
+
+        protected void FifthArticleTitle_Click(object sender, EventArgs e) {
+            Session["Article"] = articles[4];
+            Response.Redirect("Details.aspx");
         }
     }
 }

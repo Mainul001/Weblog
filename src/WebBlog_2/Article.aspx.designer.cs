@@ -28,7 +28,7 @@ namespace WebBlog_2 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FirstArticleTitle;
+        protected global::System.Web.UI.WebControls.LinkButton FirstArticleTitle;
         
         /// <summary>
         /// FirstArticleAuthor control.
@@ -55,7 +55,7 @@ namespace WebBlog_2 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SecondArticleTitle;
+        protected global::System.Web.UI.WebControls.LinkButton SecondArticleTitle;
         
         /// <summary>
         /// SecondArticleAuthor control.
@@ -82,7 +82,7 @@ namespace WebBlog_2 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ThirdArticleTitle;
+        protected global::System.Web.UI.WebControls.LinkButton ThirdArticleTitle;
         
         /// <summary>
         /// ThirdArticleAuthor control.
@@ -109,7 +109,7 @@ namespace WebBlog_2 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FourthArticleTitle;
+        protected global::System.Web.UI.WebControls.LinkButton FourthArticleTitle;
         
         /// <summary>
         /// FourthArticleAuthor control.
@@ -136,7 +136,7 @@ namespace WebBlog_2 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FifthArticleTitle;
+        protected global::System.Web.UI.WebControls.LinkButton FifthArticleTitle;
         
         /// <summary>
         /// FifthArticleAuthor control.

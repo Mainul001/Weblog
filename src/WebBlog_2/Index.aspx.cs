@@ -14,9 +14,12 @@ namespace WebBlog_2
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            
+        protected void NewPostButton_Click(object sender, EventArgs e) {
+            Response.Redirect("Create.aspx");
+        }
+
+        protected void ViewPostButton_Click(object sender, EventArgs e) {
+            Response.Redirect("Article.aspx");
         }
     }
 }
