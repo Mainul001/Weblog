@@ -101,7 +101,21 @@
             <p>
                 <asp:Button ID="CommentButton" CssClass ="btn-primary btn-lg" runat="server" Text="Comment" OnClick="CommentButton_Click" />
             </p>
+            <p>
+                <asp:Label ID="SuccessLabel" runat="server" Text=""></asp:Label>
+            </p>
         </div>
+
+
+        <div class ="container">
+            <p class ="lead">
+                All Comments
+            </p>
+
+            <asp:Table ID="CommentTable" CssClass ="table table-responsive" runat="server"></asp:Table>
+            
+        </div>
+
     </form>
 
     <script src="Scripts/jquery-2.1.3.js"></script>
